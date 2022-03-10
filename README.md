@@ -33,7 +33,7 @@ torchvision==0.11.3
 ### Preprocess
 |   |   |
 |:--:|:--:|
-|![GAN_Preprocessing.png](./image/GAN_Preprocessing.png)|![Dummy](https://github.com/JiaLingTu/DCGAN-implementation/blob/main/image//Dummy.png)|
+|![GAN_Preprocessing.png](./image/GAN_Preprocessing.png)|![Dummy](https://github.com/JiaLingTu/DCGAN-implementation/blob/main/image/Dummy.png)|
 
 Data先經過Resize後，短的那一邊被Resize成指定大小(在本題指定為64pixels),再用CenterCrop切出64×64的影像，在將影像轉換成Tensor之前，將RGB三個通道各別做Normalize到[-1, 1]之間，平均值為0.5。
 
@@ -49,7 +49,7 @@ Data先經過Resize後，短的那一邊被Resize成指定大小(在本題指定
     
 |   | Generated Image | Loss |  |
 |:--:|:--:|:--:|:--:|
-|![Dummy](https://github.com/JiaLingTu/DCGAN-implementation/blob/main/image/Dummy.png)|![loss](https://github.com/JiaLingTu/DCGAN-implementation/blob/main/image/loss.png)|![iter_15500](https://github.com/JiaLingTu/DCGAN-implementation/blob/main/image/fake_samples_iter_15500.png)|![Dummy](https://github.com/JiaLingTu/DCGAN-implementation/blob/main/image/Dummy.png)|
+|![Dummy](./image/Dummy.png)|![loss](https://github.com/JiaLingTu/DCGAN-implementation/blob/main/image/loss.png)|![iter_15500](https://github.com/JiaLingTu/DCGAN-implementation/blob/main/image/fake_samples_iter_15500.png)|![Dummy](./image/Dummy.png)|
 
 ### Some Tips
 - Add Decaying noise to training data for G and D
