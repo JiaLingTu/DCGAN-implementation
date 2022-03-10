@@ -17,10 +17,10 @@ The root folder should be structured as follows:
   
   ├─ result/     # create after running main.py
   |
-  ├─ 📄 main.py
-  ├─ 📄 train_disp.py
-  ├─ 📄 train_norm.py
-  └─ 📄 utils.py
+  ├─ main.py
+  ├─ train_disp.py
+  ├─ train_norm.py
+  └─ utils.py
 ```
 
 ### Dependencies
