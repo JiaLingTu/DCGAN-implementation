@@ -3,7 +3,7 @@
 
 
 ## Dataset
-You can download dataset img align celeba.zip which was collected from the origin website [CelebFaces] (http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
+You can download dataset img align celeba.zip which was collected from the origin website [CelebFaces](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
 
 ## Requirements
 The root folder should be structured as follows:
