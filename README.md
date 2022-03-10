@@ -9,7 +9,7 @@ You can download dataset img align celeba.zip which was collected from the origi
 The root folder should be structured as follows:
 ```
   root/
-  ├─ img_align_celeba/
+  ├─ img_align_celeba/  # you should download the dataset on the website and set the same name here.
   |  ├─ 000001.jpg
   |  ├─ 000002.jpg
   |  ├─ ...
