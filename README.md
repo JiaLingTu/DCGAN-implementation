@@ -33,7 +33,7 @@ torchvision==0.11.3
 ### Preprocess
 |   |   |
 |:--:|:--:|
-|![GAN_Preprocessing.png](./image/GAN_Preprocessing.png)|![Dummy](https://github.com/JiaLingTu/DCGAN-implementation/blob/main/image/Dummy.png)|
+|![GAN_Preprocessing.png](./image/GAN_Preprocessing.png)|![Dummy](./image/dummy.png)|
 
 Data先經過Resize後，短的那一邊被Resize成指定大小(在本題指定為64pixels),再用CenterCrop切出64×64的影像，在將影像轉換成Tensor之前，將RGB三個通道各別做Normalize到[-1, 1]之間，平均值為0.5。
 
@@ -49,30 +49,30 @@ Data先經過Resize後，短的那一邊被Resize成指定大小(在本題指定
     
 |   | Generated Image | Loss |  |
 |:--:|:--:|:--:|:--:|
-|![Dummy](./image/Dummy.png)|![loss](https://github.com/JiaLingTu/DCGAN-implementation/blob/main/image/loss.png)|![iter_15500](https://github.com/JiaLingTu/DCGAN-implementation/blob/main/image/fake_samples_iter_15500.png)|![Dummy](./image/Dummy.png)|
+|![Dummy](./image/Dummy.png)|![loss](./image/loss.png)|![iter_15500](./image/fake_samples_iter_15500.png)|![Dummy](./image/Dummy.png)|
 
 ### Some Tips
 - Add Decaying noise to training data for G and D
 
 | Real Image w/Decaying Noise | Generated Image | Decaying Noise |
 |:--:|:--:|:--:|
-|![GIF_real_add_noise](https://github.com/JiaLingTu/DCGAN-implementation/blob/main/image/Add_noise.gif)|![GIF_fake_add_noise](https://github.com/JiaLingTu/DCGAN-implementation/blob/main/image/Add_noise_fake.gif)|![PNG_decaying_noise](https://github.com/JiaLingTu/DCGAN-implementation/blob/main/image\Strategy.png)|
+|![GIF_real_add_noise](./image/Add_noise.gif)|![GIF_fake_add_noise](./image/Add_noise_fake.gif)|![PNG_decaying_noise](./image\Strategy.png)|
 
 - Add noise scale A
 
 | Generated Image w/noise scale A =0.5|Loss w/ A=0.5|Generated Image w/noise scale A=1|Loss w/ A=1|
 |:--:|:--:|:--:|:--:|
-|![fake_A0.5](https://github.com/JiaLingTu/DCGAN-implementation/blob/main/image/fake_samples_iter_8241_A0.5.png)|![loss_A0.5](https://github.com/JiaLingTu/DCGAN-implementation/blob/main/image/loss_A0.5.png)|![fake_A1](https://github.com/JiaLingTu/DCGAN-implementation/blob/main/image/fake_samples_iter_8241_A1.png)|![loss_A1](https://github.com/JiaLingTu/DCGAN-implementation/blob/main/image/loss_A1.png)|
+|![fake_A0.5](./image/fake_samples_iter_8241_A0.5.png)|![loss_A0.5](./image/loss_A0.5.png)|![fake_A1](./image/fake_samples_iter_8241_A1.png)|![loss_A1](./image/loss_A1.png)|
 
 - Label smoothing in G & D (Use Soft and Noisy Labels)  
 
 | (Real, Fake) = (1, 0) | (Real, Fake) = (0.95, 0.15) | (Real, Fake) = ([0.8, 1.1], [0, 0.3]) |
 |:--:|:--:|:--:|
-|![origin](https://github.com/JiaLingTu/DCGAN-implementation/blob/main/image\result0_fake_samples_iter_6334.png)|![relabel_fixed](https://github.com/JiaLingTu/DCGAN-implementation/blob/main/image\relabel_fixed.png)|![relabel_range](https://github.com/JiaLingTu/DCGAN-implementation/blob/main/image\relabel_range.png)|
+|![origin](./image\result0_fake_samples_iter_6334.png)|![relabel_fixed](./image\relabel_fixed.png)|![relabel_range](./image\relabel_range.png)|
 
 
 ### Some concepts
-![2(a)](https://github.com/JiaLingTu/DCGAN-implementation/blob/main/image/2(a).png)
+![2(a)](./image/2(a).png)
 - Meaning
     - black dashed line: It is a distribution baed on the real image dataset.
     - x: Domain of real data.
