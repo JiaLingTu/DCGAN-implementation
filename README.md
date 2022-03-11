@@ -5,7 +5,7 @@
 ## Dataset
 You can download dataset img align celeba.zip which was collected from the origin website [CelebFaces](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
 
-## Requirements
+## Data Structure
 The root folder should be structured as follows:
 ```
   root/
@@ -14,7 +14,6 @@ The root folder should be structured as follows:
   |  ├─ 000002.jpg
   |  ├─ ...
   |  └─
-  
   ├─ result/     # create after running main.py
   |
   └─ main.py
