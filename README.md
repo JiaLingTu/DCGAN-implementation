@@ -19,7 +19,7 @@ The root folder should be structured as follows:
   └─ main.py
 ```
 
-### Dependencies
+## Dependencies
 ```
 matplotlib==3.5.1
 numpy==1.22.1
@@ -28,7 +28,8 @@ torch==1.10.1
 torchvision==0.11.3
 ```
 
-### Preprocess
+## Train the model
+### Data Process
 |   |   |
 |:--:|:--:|
 |![GAN_Preprocessing.png](./image/GAN_Preprocessing.png)|![Dummy](./image/dummy.png)|
@@ -69,7 +70,7 @@ Data先經過Resize後，短的那一邊被Resize成指定大小(在本題指定
 |![origin](./image\result0_fake_samples_iter_6334.png)|![relabel_fixed](./image\relabel_fixed.png)|![relabel_range](./image\relabel_range.png)|
 
 
-### Some concepts
+## Some concepts
 ![2(a)](./image/2(a).png)
 - Meaning
     - black dashed line: It is a distribution baed on the real image dataset.
